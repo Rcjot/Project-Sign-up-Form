@@ -109,6 +109,16 @@ main {
     border-radius: 30px;
 }
 
+section {
+    padding: 40px;
+}
+
+#myform {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
 .emphasis {
     font-style: italic;
     font-size: inherit;
