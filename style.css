@@ -80,7 +80,8 @@ main {
 .right {
     flex:1.3;
     background-color: rgba(37, 28, 71, 0.8);
-    border: 5px solid black;
+    /* box-shadow: inset 2em 1em rgba(0,0,0,0.3); */
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.3) -3px -3px 6px 1px inset;
     display: flex;
     flex-direction: column;
     max-height: calc(100vh - var(--footerHeight));
@@ -88,35 +89,73 @@ main {
 }
 .right > div {
     flex:1;
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 
 .top{
-    padding-top: 20px;
+    padding-top: 100px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 15px;
 }
 .topText {
     padding: 15px;
     margin-left: 70px;
     margin-right: 50px;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1.5;
-    background-color: rgba(0,0,0,0.3);
-    border-radius: 30px;
+    /* background-color: rgba(0,0,0,0.3);
+    border-radius: 30px; */
 }
 
 section {
     padding: 40px;
 }
 
+h1{
+    font-size: 30px;
+}
+
+input{
+    display: inline-block; 
+}
+
 #myform {
+    background-color: rgba(37, 28, 71, 0.8);
     display: flex;
     flex-direction: column;
     gap: 18px;
+    /* border: 1px solid rgba(0,0,0,0.7); */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+}
+#myform > div {
+    display: flex;
+    gap: 50px;
+}
+#myform > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#account {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#account > button {
+    width: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 86, 190, 0.7);
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .emphasis {
@@ -133,6 +172,6 @@ footer {
     height: var(--footerHeight);
     padding: 12px;
     padding-right: 20px;
-    background-color: rgba(37, 28, 71, 0.8);
+    background-color: rgba(31, 41, 55, 0.8);
     color: white;
 }

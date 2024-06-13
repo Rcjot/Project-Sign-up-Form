@@ -22,8 +22,8 @@
 
             <div class="top">
                 <!-- これは本物なオンラインサービスではない。夢を叶えるために一生一回こういうのが必要だと自分は知っているだろう。サインインして夢が叶うよ！ -->
-                <div class="topText">Hi! This is not a real online service! 
-                    You know you need something like this in your life 
+                <div class="topText">Hi! This is not a real online service! <br>
+                    You know you need something like this in your life <br>
                     to help you realize your deepest dreams. <br>
                     Sign up <span class="emphasis">now</span> to get started.
                 </div>
@@ -35,36 +35,46 @@
                 <form action="#">
                     <section id="myform">
                         <h1>Let's do this!</h1>
-
+                        
                         <div id="names">
-                            <label for="firstname">first name</label>
-                            <input type="text" id="firstname" name="first_name">
+                            <div  id="fname">
+                                <label for="firstname">first name</label>
+                                <input type="text" id="firstname" name="first_name">
+                            </div>
 
-                            <label for="lastname">last name</label>
-                            <input type="text" id="lastname" name="last_name">
+                            <div id="lname">
+                                <label for="lastname">last name</label>
+                                <input type="text" id="lastname" name="last_name">
+                            </div>
                         </div>
 
                         <div id="emailno">
-                            <label for="email">email</label>
-                            <input type="email" name="email" id="email">
+                            <div>
+                                <label for="email">email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            
+                            <div>
+                                <label for="number">number</label>
+                                <input type="text" name="number" id="number">
+                            </div>
 
-                            <label for="number">number</label>
-                            <input type="text" name="number" id="number">
                         </div>
 
                         <div id="password">
-                            <label for="pass">password</label>
-                            <input type="password" name="password" id="pass">
+                            <div>
+                                <label for="pass">password</label>
+                                <input type="password" name="password" id="pass">
+                            </div>
 
-                            <label for="passre">confirm password</label>
-                            <input type="password" name="passwordconfirm" id="passre">
+                            <div>
+                                <label for="passre">confirm password</label>
+                                <input type="password" name="passwordconfirm" id="passre">
+                            </div>
                         </div>
-
-
-
                     </section>
 
-                    <section>
+                    <section id="account">
                         <button>Create Account</button>
 
                         <div>Already have an account? <a href="#">Log in</a></div>
