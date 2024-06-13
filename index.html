@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <main>
         <div class="left">
+            <img src="images/gbpLogo.png" id="gbpLogo" alt="gbpLogo">
             <div class="container">
                 <img src="images/odin-lined.png" class="odinimg">
                 <div class="norse">ODIN</div>
@@ -21,6 +22,7 @@
         <div class="right">
 
             <div class="top">
+                
                 <!-- これは本物なオンラインサービスではない。夢を叶えるために一生一回こういうのが必要だと自分は知っているだろう。サインインして夢が叶うよ！ -->
                 <div class="topText">Hi! This is not a real online service! <br>
                     You know you need something like this in your life <br>
@@ -39,24 +41,28 @@
                         <div id="names">
                             <div  id="fname">
                                 <label for="firstname">first name</label>
-                                <input type="text" id="firstname" name="first_name">
+                                <input type="text" id="firstname" name="first_name"  placeholder="kasumi" required>
+                                <span></span>
                             </div>
 
                             <div id="lname">
                                 <label for="lastname">last name</label>
-                                <input type="text" id="lastname" name="last_name">
+                                <input type="text" id="lastname" name="last_name" placeholder="toyama" required>
+                                <span></span>
                             </div>
                         </div>
 
                         <div id="emailno">
                             <div>
                                 <label for="email">email</label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" placeholder="@" required>
+                                <span></span>
                             </div>
                             
                             <div>
                                 <label for="number">number</label>
-                                <input type="text" name="number" id="number">
+                                <input type="text" name="number" pattern="[0-9]+" id="number" required>
+                                <span></span>
                             </div>
 
                         </div>
@@ -64,12 +70,14 @@
                         <div id="password">
                             <div>
                                 <label for="pass">password</label>
-                                <input type="password" name="password" id="pass">
+                                <input type="password" name="password" id="pass" required>
+                                <span></span>
                             </div>
 
                             <div>
                                 <label for="passre">confirm password</label>
-                                <input type="password" name="passwordconfirm" id="passre">
+                                <input type="password" name="passwordconfirm" id="passre" required>
+                                <span></span>
                             </div>
                         </div>
                     </section>
