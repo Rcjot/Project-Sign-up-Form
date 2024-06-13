@@ -17,3 +17,8 @@ Hi! project sign up form, tbh just skimmed everything to get here, but i still w
 challenging part only is reading the documentations lol..
 
 I couldn't do the confirming password thingy.
+
+
+Learned: 
+- how to reduce bg image opacity without it inherit to children
+- box shadow looks really good when done right
